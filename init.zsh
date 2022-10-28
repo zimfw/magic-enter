@@ -21,6 +21,7 @@ _prompt_mnml_buffer-empty() {
     if (( ${#dirstack} )) print -P %F{244}${${dirstack/${HOME}/\~}//\//%f\/%F{244}}%f
     command ls -F
     command git status -sb 2>/dev/null
+    print
     zle redisplay
   else
     zle accept-line
