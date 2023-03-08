@@ -1,8 +1,8 @@
 magic-enter
 ===========
 
-A fork of the magic enter feature from [subnixr's minimal] prompt theme.
-Shown when there is no command and user presses ENTER.
+A fork of the magic enter feature from [subnixr's minimal] prompt theme. Shown
+when there is no command at the start of a command line and user presses ENTER.
 
 What does it show?
 ------------------

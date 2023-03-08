@@ -6,7 +6,7 @@ _prompt_mnml_precmd() {
 }
 
 _prompt_mnml_buffer-empty() {
-  if [[ -z ${BUFFER} ]]; then
+  if [[ -z ${BUFFER} && ${CONTEXT} == start ]]; then
     # draw infoline
     if (( MNML_LAST_ERR )) print -Pn '%F{${MNML_ERR_COLOR}}${MNML_LAST_ERR} '
     print -Pn '%(1j.%F{244}%j%f& .)%F{244}%n%f@%F{244}%m%f:'
