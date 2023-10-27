@@ -19,7 +19,7 @@ _prompt_mnml_buffer-empty() {
     print ]
     # display magic enter
     if (( ${#dirstack} )) print -P %F{244}${${(D)dirstack}//\//%f\/%F{244}}%f
-    ls -F
+    ls -F --color=always
     command git status -sb 2>/dev/null
     print -Pn ${PS1}
     zle redisplay
