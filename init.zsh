@@ -10,7 +10,7 @@ _prompt_mnml_buffer-empty() {
     # draw infoline
     if (( MNML_LAST_ERR )) print -Pn '%F{${MNML_ERR_COLOR}}${MNML_LAST_ERR} '
     print -Pn '%(1j.%F{244}%j%f& .)%F{244}%n%f@%F{244}%m%f:'
-    print -P %F{244}${${(D)PWD}//\//%f\/%F{244}}
+    print -P %F{244}${${(D)PWD}//\//%f\/%F{244}}%f
     # display magic enter
     if (( ${#dirstack} )) print -P %F{244}${${(D)dirstack}//\//%f\/%F{244}}%f
     ls -AF
