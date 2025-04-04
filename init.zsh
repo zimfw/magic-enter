@@ -10,9 +10,9 @@ _prompt_mnml_buffer-empty() {
     # draw infoline
     if (( MNML_LAST_ERR )) print -Pn '%F{${MNML_ERR_COLOR}}${MNML_LAST_ERR} '
     print -Pn '%(1j.%F{244}%j%f& .)%F{244}%n%f@%F{244}%m%f:'
-    print -P %F{244}${${(D)PWD}//\//%f\/%F{244}}%f
+    print -P %F{244}${${(Dq+)PWD}//\//%f\/%F{244}}%f
     # display magic enter
-    if (( ${#dirstack} )) print -P %F{244}${${(D)dirstack}//\//%f\/%F{244}}%f
+    if (( ${#dirstack} )) print -P %F{244}${${(Dq+)dirstack}//\//%f\/%F{244}}%f
     ls -AF
     command git status -sb --untracked-files=no 2>/dev/null
     print -Pn ${PS1}

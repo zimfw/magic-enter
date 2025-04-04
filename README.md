@@ -1,8 +1,8 @@
 magic-enter
 ===========
 
-A fork of the magic enter feature from [subnixr's minimal] prompt theme. Shown
-when there is no command at the start of a command line and user presses ENTER.
+A minimal fork of the magic enter feature from [subnixr's minimal] prompt theme.
+Shown when the start of a command line is empty and user presses ENTER.
 
 What does it show?
 ------------------
@@ -12,7 +12,7 @@ What does it show?
     * The number of background jobs only if there is at least one.
     * The current username, hostname and working directory.
   * The directory stack if it's not empty.
-  * `ls -A` output.
+  * `ls -AF` output.
   * Concise `git status` only when inside a git repo.
 
 [subnixr's minimal]: https://github.com/subnixr/minimal
