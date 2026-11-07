@@ -21,7 +21,7 @@ _prompt_mnml_buffer-empty() {
     )
     local zcommand
     for zcommand (${zcommands}) eval ${zcommand}
-    print -Pn "${PS1}"
+    print -Pn ${PS1}
     zle redisplay
   else
     zle accept-line
